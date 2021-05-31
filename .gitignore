@@ -30,7 +30,6 @@ node_modules
 .idea
 
 # Build files
-dist
 Changelog.md
 
 # NPM files
