@@ -3,8 +3,7 @@ module.exports = {
   output: {
     path: __dirname,
     filename: './dist/index.js',
-    libraryTarget: 'commonjs2',
-    library: 'react-attr'
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
