@@ -12,7 +12,7 @@
 import 'core-js/fn/array/some'
 import 'core-js/fn/string/ends-with'
 
-export default function(file, acceptedFiles) {
+function accepts(file, acceptedFiles) {
   if (file && acceptedFiles) {
     const acceptedFilesArray = Array.isArray(acceptedFiles)
       ? acceptedFiles
@@ -34,3 +34,5 @@ export default function(file, acceptedFiles) {
   }
   return true
 }
+
+export default accepts
