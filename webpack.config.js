@@ -2,16 +2,19 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname,
-    filename: './dist/index.js',
-    libraryTarget: 'umd'
+    filename: './dist/index.js'
+    // libraryTarget: 'umd'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        use: {
+          loader: 'babel-loader'
+        },
         exclude: /node_modules/
       }
     ]
-  }
+  },
+  devtool: false
 }
